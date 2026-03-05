@@ -11,7 +11,21 @@ Each member **copies only their section** and pastes it into a **new Cursor chat
 
 ---
 
-## Prompt for Member 1 (UI/UX – Team Lead)
+## Who can work when (after Member 1’s setup is merged)
+
+| Member | Can start when | Depends on |
+|--------|----------------|------------|
+| **2 – Auth** | Right away | Only Member 1 (setup) |
+| **3 – PG** | Right away | Only Member 1 (setup) |
+| **4 – Rides** | After **Member 2** merged | Member 1 + Member 2 (needs session + user.college) |
+| **5 – Reviews + Deploy** | After **Member 2** merged (better after 3) | Member 1 + Member 2; nicer with Member 3 done so PG pages exist |
+| **1 – UI/UX** | **Last** (after 2, 3, 4, 5) | Everyone’s pages/routes in place so you can polish the full app |
+
+So: **2 and 3 can work in parallel** right after your setup. **4 should wait for 2.** **5 should wait for 2** (and ideally 3). **UI/UX (Member 1) is done last** so one person polishes the whole app.
+
+---
+
+## Prompt for Member 1 (UI/UX – Team Lead) — use last
 
 Copy from the line below to the end of this section and paste into Cursor.
 
@@ -189,4 +203,4 @@ Each member should:
 4. Run `npm run build` and fix any errors.
 5. Commit: `git add -A && git commit -m "Member X: <short description>"`.
 6. Push: `git push -u origin member-X-<feature>`.
-7. Open a PR and request review. Merge in order: 1 → 2 → 3 → 4 → 5.
+7. Open a PR and request review. **Merge order:** 1 (setup) → 2 → 3 → 4 → 5 → 1 (UI/UX last).
