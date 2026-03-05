@@ -1,4 +1,4 @@
-# Master prompts for Campus Nest team
+
 
 Each member **copies only their section** and pastes it into a **new Cursor chat** in the project. After the AI implements everything, they create a branch, commit, push, and open a PR.
 
